@@ -18,10 +18,9 @@ This script automatically extracts user / system files trough Local File Inclusi
 * pip install -r requirements.txt
 * python bud.py -hh
 
-# How to use
+# Basic usage
 ```
-an actual results file here. git markup does not like all those hashtags :)
-*python bud.py -u "http://vulie.local/image.php?mime=jpg&src=&ast;" -e jpg -i*
+*python bud.py -u "http://vulie.local/image.php?mime=jpg&src=*;" -e jpg -i*
 -u: the url to start with, needs mime set to extension to actually call the vuln function
 also both mime and extension must be a valid image format
 -e jpg to append a null-byte followed by the fake extension
@@ -34,7 +33,7 @@ Usage: bud.py [options]
 
 Options:
   -h, --help            show this help message and exit
-  -u URL                The URL to start with including an astrix (&ast;) for the
+  -u URL                The URL to start with including an astrix (*) for the
                         inject point
   -n, --null-byte       Use a null-byte to bypass suffix
   -e ERROR_TEXT, --error=ERROR_TEXT
