@@ -20,7 +20,7 @@ This script automatically extracts user / system files trough Local File Inclusi
 
 # Basic usage
 ```
-*python bud.py -u "http://vulie.local/image.php?mime=jpg&src=*;" -e jpg -i*
+$ python bud.py -u "http://vulie.local/image.php?mime=jpg&src=*" -e jpg -i
 -u: the url to start with, needs mime set to extension to actually call the vuln function
 also both mime and extension must be a valid image format
 -e jpg to append a null-byte followed by the fake extension
